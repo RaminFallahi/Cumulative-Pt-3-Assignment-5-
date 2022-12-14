@@ -1,0 +1,41 @@
+﻿@model Assignment3_try2_RaminFallahi.Models.teacher
+@{
+    ViewBag.Title = "Edit";
+}
+<nav>
+    <a href="/Teacher/List">Back To Teachers List</a>&nbsp;
+</nav>
+
+<h2>Edit Teacher List</h2>
+
+<form method="POST" action="/Teacher/update/@Model.teacherid">
+    <div>
+        <label>Teacher First Name</label>
+        <input type="text" id="teachefname" name="teacherfname" value="@Model.teacherfname" />
+    </div>
+
+    <div>
+        <label>Teacher Last Name</label>
+        <input type="text" id="teachelname" name="teacherlname" value="@Model.teacherlname" />
+    </div>
+
+    <div>
+        <label>Teacher Employee Number</label>
+        <input type="text" id="employeenumber" name="employeenumber" value="@Model.employeenumber" />
+    </div>
+
+    <div>
+        <label>Teacher Hire Date</label>
+        <input type="text" id="hiredate" name="hiredate" value="@Model.hiredate" />
+    </div>
+
+    <div>
+        <label>Teacher Salary</label>
+        <input type="text" id="salary" name="salary" value="@Model.salary" />
+    </div>
+
+    <div>
+        <input type="submit" value="Update Teacher" />
+    </div>
+</form>
+ 

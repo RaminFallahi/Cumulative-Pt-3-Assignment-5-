@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Assignment3_try2_RaminFallahi.Models.teacher>
+@{
+    ViewBag.Title = "New";
+}
+<nav>
+    <a href="/Teacher/List">Back To Teachers List</a>&nbsp;
+</nav>
+
+<h2>New Teacher</h2>
+<!-- ROUTE from submission to server-->
+<form method="POST" action="/Teacher/Create">
+
+    <div>
+        <label>Teacher First Name</label>
+        <input type="text" name="teacherfname" />
+    </div>
+
+    <div>
+        <label>Teacher Last Name</label>
+        <input type="text" name="teacherlname" />
+    </div>
+
+    <div>
+        <label>Teacher Employee Number</label>
+        <input type="text" name="employeenumber" />
+    </div>
+
+    <div>
+        <label>Teacher Hire Date</label>
+        <input type="date" name="hiredate" />
+    </div>
+
+    <div>
+        <label>Teacher Salary</label>
+        <input type="text" name="salary" />
+    </div>
+
+    <div>
+        <input type="submit" value="Add Teacher" />
+    </div>
+</form>
+
